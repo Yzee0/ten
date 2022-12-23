@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录注册</title>
+</head>
+<body>
+         <a href="#" onclick="a2()">注册 </a> | <a href="#" onclick="a1()">登录 </a> 
+        <p>这是主页面</p>
+</body>
+<script>
+    function a1() {
+        mya1= window.open('','','width=350,height=300');
+        mya1.document.write("<from><p>用户名：</p><input type='text' value='请输入账号'></br><p>密码：</p><input type='password' value=''></br><input type='submit' value='注册'>");
+        mya1.focus();mya1.document.body.style.backgroundColor = '#FFB6C1'
+    }
+    function a2() {
+        mya2= window.open('','','width=350,height=300');
+        mya2.document.write("<from><p>用户名：</p><input type='text' value='请输入账号'></br><p>密码：</p><input type='password' value=''></br><input type='submit' value='登录'>");
+        mya2.focus();mya2.document.body.style.backgroundColor = '#4B0082'
+     }
+</script>
+</html>
